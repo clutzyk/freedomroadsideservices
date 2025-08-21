@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Freedom Roadside Services | Fast Roadside Assistance in Volusia County</title>
+  <meta name="description" content="Stranded? Freedom Roadside Services brings fuel delivery, spare tire mounting, jump starts, and lockout service to you—fast. Serving New Smyrna Beach and surrounding Volusia County, FL." />
+  <meta name="theme-color" content="#dc2626" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0a1022;--primary:#ef4444;--accent:#3b82f6;--text:#f8fafc;--muted:#cbd5e1;--card:#111933;--highlight:#ef4444}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#1f2937 0%,#111827 100%);color:var(--text)}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;backdrop-filter:blur(8px);background:rgba(17,24,39,.85);border-bottom:1px solid rgba(255,255,255,.1);z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px}
+    .badge{font-size:12px;color:#1f2937;background:var(--accent);padding:4px 8px;border-radius:999px;font-weight:700}
+    .cta{display:inline-flex;align-items:center;gap:10px;background:var(--primary);color:#fff;padding:14px 18px;border-radius:14px;font-weight:800;border:1px solid rgba(255,255,255,.18);box-shadow:0 10px 25px rgba(239,68,68,.35);transition:.2s}
+    .cta:hover{transform:translateY(-1px);box-shadow:0 14px 32px rgba(239,68,68,.45)}
+    .ghost{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.5)}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;padding:70px 0 24px}
+    .hero h1{font-size:clamp(32px,5vw,54px);line-height:1.05;margin:0}
+    .hero p{color:var(--muted);font-size:18px;margin:14px 0 26px}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:18px}
+    .card h3{margin:8px 0 6px;font-size:18px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .icon{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,rgba(239,68,68,.2),rgba(59,130,246,.2));display:grid;place-items:center;border:1px solid rgba(255,255,255,.18)}
+    .section{padding:48px 0}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .list{display:grid;gap:10px}
+    .check{display:flex;align-items:center;gap:10px}
+    .check svg{flex:0 0 auto}
+    .pill{display:inline-block;background:rgba(59,130,246,.15);color:#dbeafe;border:1px solid rgba(59,130,246,.45);padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700}
+    footer{border-top:1px solid rgba(255,255,255,.1);padding:28px 0;color:var(--muted)}
+    .footer-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;align-items:center}
+    .callbar{position:fixed;inset:auto 0 18px;display:flex;justify-content:center;z-index:60}
+    .callbar a{display:flex;align-items:center;gap:10px;background:var(--accent);color:#041021;padding:14px 18px;border-radius:999px;font-weight:900;border:1px solid rgba(255,255,255,.25);box-shadow:0 8px 30px rgba(59,130,246,.35)}
+    .highlight-box{background:rgba(239,68,68,.15);border:2px solid var(--highlight);padding:16px;border-radius:12px;margin-top:20px;text-align:center}
+    .highlight-box strong{color:var(--highlight)}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr}}
+    @media(max-width:560px){.cards{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand" aria-label="Freedom Roadside Services">
+        <!-- Eagle-in-Star Logo -->
+        <svg width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="rb" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ef4444"/>
+              <stop offset="100%" stop-color="#3b82f6"/>
+            </linearGradient>
+          </defs>
+          <path d="M32 4l7.9 16 17.7 2.6-12.8 12.5 3 17.5L32 44.6 16.2 52.6l3-17.5L6.4 22.6 24.1 20z" fill="none" stroke="url(#rb)" stroke-width="3"/>
+          <path d="M37 30c-2.5-5.5-9.5-6.5-14-3.5 4 .5 6.5 2.4 7.8 5.1-3.3-.8-6.2.3-7.9 2.3 2.6.3 4.6 1.1 6.2 2.6-2.1.6-3.8 1.8-4.9 3.5 3.8-.3 7.1-1.5 9.7-3.6 2.7-2.2 4.6-5.3 6-9.4z" fill="#f8fafc" opacity="0.95"/>
+          <circle cx="35" cy="28.8" r="1.2" fill="#0b1220"/>
+        </svg>
+        <span>Freedom Roadside <span class="badge">24/7</span></span>
+      </div>
+      <nav>
+        <a class="cta ghost" href="#services">Services</a>
+        <a class="cta" href="tel:+14079529825" aria-label="Call now">Call (407) 952‑9825</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="home">
+      <div>
+        <h1>Fast Roadside Help—Right Where You Are</h1>
+        <p>Out of gas? Flat tire? Battery dead? Locked out? We come to you in minutes with friendly, professional roadside assistance across New Smyrna Beach and Volusia County.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="cta" href="tel:+14079529825">Call Now</a>
+          <a class="cta ghost" href="sms:+14079529825&body=Hi%2C%20I%20need%20roadside%20assistance.%20My%20location%20is%3A%20">Text For Help</a>
+        </div>
+        <div style="margin-top:14px;display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+          <span class="pill">Licensed & Insured</span>
+          <span class="pill">ETA Updates</span>
+          <span class="pill">Card & Cash Accepted</span>
+        </div>
+      </div>
+      <div>
+        <img src="hero.jpg" alt="Roadside safety triangle with car pulled over" style="width:100%;border-radius:18px;object-fit:cover;min-height:260px;display:block" loading="eager" decoding="async"/>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <h2 style="margin:0 0 14px;font-size:28px">What We Do</h2>
+      <p style="margin:0 0 18px;color:var(--muted)">We handle common roadside issues on the spot. Transparent pricing, no surprises.</p>
+      <div class="cards">
+        <div class="card">
+          <div class="icon">⛽</div>
+          <h3>Fuel Delivery</h3>
+          <p>Ran out of gas? We deliver enough fuel to get you back on the road or to the nearest station.</p>
+          <p><strong>From $59</strong> + fuel + mileage <sup style="opacity:.7">†</sup></p>
+        </div>
+        <div class="card">
+          <div class="icon">🛞</div>
+          <h3>Spare Tire Mounting</h3>
+          <p>We’ll install your spare and torque lugs properly so you can drive safely to a tire shop.</p>
+          <p><strong>From $69</strong> + mileage <sup style="opacity:.7">†</sup></p>
+        </div>
+        <div class="card">
+          <div class="icon">🔋</div>
+          <h3>Jump Starts</h3>
+          <p>Safe, modern jump equipment for cars, SUVs, and light trucks—no damage to electronics.</p>
+          <p><strong>From $59</strong> + mileage <sup style="opacity:.7">†</sup></p>
+        </div>
+        <div class="card">
+          <div class="icon">🔑</div>
+          <h3>Lockout Service</h3>
+          <p>Keys locked inside? We use professional methods to unlock most vehicles without damage.</p>
+          <p><strong>From $69</strong> + mileage <sup style="opacity:.7">†</sup></p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px">
+        <h3 style="margin:0 0 10px">Local Price Snapshot – New Smyrna Beach / Volusia</h3>
+        <ul style="margin:0 0 6px 18px;color:var(--muted);line-height:1.5">
+          <li>Fuel delivery: <strong>$50–$100</strong> base + fuel cost + mileage</li>
+          <li>Jump start: <strong>$50–$100</strong> + mileage</li>
+          <li>Spare tire mount: <strong>$50–$100</strong> + mileage</li>
+          <li>Lockout service: <strong>$60–$110</strong> + mileage</li>
+        </ul>
+        <p style="margin:10px 0 0;color:var(--muted);font-size:14px">Prices vary by distance, vehicle type, traffic, and after-hours requests. Call or text for an exact quote.</p>
+      </div>
+
+      <div class="highlight-box">
+        <p>Mileage is charged at <strong>$2 per mile after the first 10 miles</strong>. Beyond 25 miles, a <strong>$25 out-of-area surcharge</strong> applies.</p>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="grid-3">
+        <div class="card">
+          <h3>Clear ETAs</h3>
+          <p>We’ll confirm your location, send an ETA, and keep you updated until we arrive.</p>
+        </div>
+        <div class="card">
+          <h3>Local & Reliable</h3>
+          <p>Based in New Smyrna Beach, serving Port Orange, Edgewater, Daytona Beach, and nearby.</p>
+        </div>
+        <div class="card">
+          <h3>Simple Payment</h3>
+          <p>Pay by card or cash. Receipts texted or emailed instantly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <h2 style="margin:0 0 14px;font-size:28px">How It Works</h2>
+      <div class="list">
+        <div class="check">✔️ Call or text <a href="tel:+14079529825">(407) 952‑9825</a>.</div>
+        <div class="check">✔️ Share your location, vehicle, and issue.</div>
+        <div class="check">✔️ We dispatch immediately and keep you posted with ETA updates.</div>
+      </div>
+      <div style="margin-top:18px"><a class="cta" href="tel:+14079529825">Get Help Now</a></div>
+    </section>
+
+    <section class="section" id="coverage">
+      <h2 style="margin:0 0 14px;font-size:28px">Coverage Area & Hours</h2>
+      <p style="margin:0 0 8px;color:var(--muted)">New Smyrna Beach · Edgewater · Port Orange · Daytona Beach · Ormond Beach</p>
+      <p>Open <strong>7 days</strong>, extended hours. After-hours surcharge may apply.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Freedom Roadside Services</strong><br/>
+        New Smyrna Beach, FL · Volusia County<br/>
+        <a href="tel:+14079529825">(407) 952‑9825</a> · <a href="mailto:christopher.lutzyk@aotahs.com">christopher.lutzyk@aotahs.com</a>
+      </div>
+      <div style="text-align:right">
+        <a class="cta" href="tel:+14079529825">Call Now</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="callbar">
+    <a href="tel:+14079529825">📞 Tap to Call Roadside Help</a>
+  </div>
+</body>
+</html>
