@@ -89,6 +89,190 @@
         <img src="hero.jpg" alt="Roadside safety triangle with car pulled over" style="width:100%;border-radius:18px;object-fit:cover;min-height:260px;display:block" loading="eager" decoding="async"/>
       </div>
     </section>
+<!-- ===== Freedom Roadside Services – Lead Magnet ===== -->
+<section id="frs-lead" class="frs-wrap" aria-label="Freedom Roadside Services Lead Magnet">
+  <style>
+    .frs-wrap{
+      --blue:#1e3a8a; --red:#dc2626; --ink:#0f172a; --muted:#475569; --bg:#f8fafc; --card:#ffffff; --line:#e5e7eb;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg); color:var(--ink);
+      border:1px solid var(--line); border-radius:20px; overflow:hidden;
+    }
+    .frs{max-width:1120px;margin:auto; padding:clamp(18px,3.5vw,34px);}
+    .eyebrow{letter-spacing:.12em;text-transform:uppercase;font-size:.82rem;color:#64748b}
+    .frs h2{font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.15;margin:.25rem 0 .5rem}
+    .kicker{font-size:1.02rem;color:#334155;margin:0 0 .75rem}
+    .promo{display:inline-flex;align-items:center;gap:10px;background:rgba(30,58,138,.08);border:1px solid rgba(30,58,138,.25);
+           color:#0b2b8a;padding:10px 12px;border-radius:12px;font-weight:700}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:16px}
+    .card{grid-column:span 12;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+    @media(min-width:760px){.half{grid-column:span 6}}
+    .list{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:8px}
+    .list li{display:flex;gap:10px;align-items:flex-start}
+    .tick{width:18px;height:18px;border-radius:6px;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:.82rem;margin-top:2px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .btn{display:inline-block;padding:12px 16px;border-radius:12px;text-decoration:none;font-weight:800}
+    .btn-primary{background:var(--red);color:#fff;box-shadow:0 10px 22px rgba(220,38,38,.2)}
+    .btn-ghost{background:#fff;border:1px solid var(--line);color:var(--blue)}
+    .muted{color:#64748b}
+    .legal{font-size:.86rem;color:#6b7280;margin-top:8px}
+    .fld{display:block;width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:10px;font-size:1rem}
+    .lbl{font-size:.92rem;color:#334155;margin:6px 0 4px;display:block}
+  </style>
+
+  <div class="frs">
+    <div class="eyebrow">Freedom Roadside Services • Volusia County & Nearby</div>
+    <h2>Stranded? We’ll get you rolling — fast.</h2>
+    <p class="kicker">Jump starts • Tire changes • Lockouts • Fuel delivery • Tow dispatch</p>
+    <span class="promo">🇺🇸 NEW-CUSTOMER SPECIAL: <strong>$20 OFF your first roadside service</strong></span>
+
+    <div class="grid">
+      <!-- Lead Magnet + Form -->
+      <div class="card half">
+        <h3 style="margin:0 0 6px;">Grab your $20 OFF + Free Glovebox Checklist</h3>
+        <p class="muted" style="margin:0 0 10px;">Enter your details and we’ll text/email you the coupon & quick checklist.</p>
+
+        <form id="frsForm" onsubmit="return frsSubmit(event)">
+          <label class="lbl" for="f_name">Name</label>
+          <input id="f_name" name="name" class="fld" placeholder="Your full name" required>
+
+          <label class="lbl" for="f_phone">Phone</label>
+          <input id="f_phone" name="phone" class="fld" placeholder="Your mobile number" required>
+
+          <label class="lbl" for="f_email">Email (optional)</label>
+          <input id="f_email" type="email" name="email" class="fld" placeholder="you@example.com">
+
+          <label class="lbl" for="f_loc">City / Cross-streets</label>
+          <input id="f_loc" name="location" class="fld" placeholder="e.g., NSB – SR-44 & I-95" required>
+
+          <label class="lbl" for="f_vehicle">Vehicle (Year • Make • Model)</label>
+          <input id="f_vehicle" name="vehicle" class="fld" placeholder="2018 Ford F-150" required>
+
+          <label class="lbl" for="f_service">Service Needed</label>
+          <select id="f_service" name="service" class="fld" required>
+            <option value="">Choose a service…</option>
+            <option>Jump start</option>
+            <option>Tire change / flat repair</option>
+            <option>Lockout</option>
+            <option>Fuel delivery</option>
+            <option>Tow request</option>
+            <option>Battery delivery/install</option>
+          </select>
+
+          <label class="lbl" for="f_pref">Contact Preference</label>
+          <select id="f_pref" name="pref" class="fld" required>
+            <option>Text me</option>
+            <option>Call me</option>
+            <option>Email me</option>
+          </select>
+
+          <label style="display:flex;gap:10px;align-items:flex-start;margin:8px 0 0;">
+            <input type="checkbox" required style="margin-top:3px">
+            <span class="muted">I agree to be contacted about this request and to receive my $20 coupon.</span>
+          </label>
+
+          <div class="cta">
+            <button class="btn btn-primary" type="submit">Send My $20 Coupon</button>
+            <a class="btn btn-ghost" href="#frs-checklist">Preview the checklist</a>
+          </div>
+        </form>
+
+        <p class="legal">Coupon code: <strong>FRRS-20OFF</strong> • One per customer • New-customer special • Not valid with other offers • Service area limits apply.</p>
+      </div>
+
+      <!-- Value / Trust -->
+      <div class="card half">
+        <h3 style="margin:0 0 6px;">Why Freedom Roadside?</h3>
+        <ul class="list">
+          <li><span class="tick">✓</span><span>Fast local response & clear ETAs</span></li>
+          <li><span class="tick">✓</span><span>Upfront pricing — no surprises</span></li>
+          <li><span class="tick">✓</span><span>Licensed & insured • Friendly techs</span></li>
+        </ul>
+        <p class="muted" style="margin-top:10px;">We handle light roadside services directly and can dispatch a tow partner when needed.</p>
+        <div class="legal">Questions? Call <a href="tel:+14079529825">407-952-9825</a></div>
+      </div>
+    </div>
+
+    <!-- Lead magnet content (freebie) -->
+    <div id="frs-checklist" class="card" style="margin-top:12px;">
+      <h3 style="margin:0 0 8px;">Free Glovebox Roadside Checklist</h3>
+      <ul class="list">
+        <li><span class="tick">✓</span><span>Insurance & registration • Roadside plan card</span></li>
+        <li><span class="tick">✓</span><span>Phone charger (12V) • Flashlight/headlamp</span></li>
+        <li><span class="tick">✓</span><span>Jumper cables or jump pack</span></li>
+        <li><span class="tick">✓</span><span>Tire gauge • Compact inflator • Lug wrench</span></li>
+        <li><span class="tick">✓</span><span>Reflective triangles • High-vis vest • Poncho</span></li>
+        <li><span class="tick">✓</span><span>Gloves • Paper towels • Basic first-aid kit</span></li>
+        <li><span class="tick">✓</span><span>1-gal fuel can (empty) • Bottled water</span></li>
+      </ul>
+      <p class="legal">Tip: Snap a photo of your tire size (sidewall) and keep it in your phone.</p>
+    </div>
+  </div>
+
+  <script>
+    // On submit, try to open an SMS to your number with the details.
+    // If SMS isn’t available (desktop), it falls back to an email draft.
+    function frsSubmit(e){
+      e.preventDefault();
+      var f = e.target;
+      var name = f.name.value.trim();
+      var phone = f.phone.value.trim();
+      var email = (f.email.value || "").trim();
+      var loc = f.location.value.trim();
+      var veh = f.vehicle.value.trim();
+      var svc = f.service.value;
+      var pref = f.pref.value;
+
+      var lines = [
+        "Lead Magnet: Freedom Roadside Services ($20 OFF)",
+        "Name: " + name,
+        "Phone: " + phone,
+        (email ? "Email: " + email : null),
+        "Location: " + loc,
+        "Vehicle: " + veh,
+        "Service: " + svc,
+        "Contact Preference: " + pref,
+      ].filter(Boolean);
+
+      var body = encodeURIComponent(lines.join(" | "));
+      var smsHref = "sms:+14079529825?&body=" + body;
+      var mailHref = "mailto:christopher.lutzyk@aotahs.com"
+                   + "?subject=" + encodeURIComponent("FRS Lead: $20 OFF")
+                   + "&body=" + body;
+
+      // Try SMS first
+      var opened = false;
+      try { window.location.href = smsHref; opened = true; } catch(e){}
+      if(!opened){
+        window.location.href = mailHref;
+      }
+      return false;
+    }
+  </script>
+
+  <!-- SEO: Local business + offer (no external requests) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"AutomotiveBusiness",
+    "name":"Freedom Roadside Services",
+    "areaServed":"Volusia County, FL",
+    "telephone":"+1-407-952-9825",
+    "offers":{
+      "@type":"Offer",
+      "name":"$20 OFF First Roadside Service",
+      "priceCurrency":"USD",
+      "discount":"20",
+      "category":"Roadside Assistance",
+      "url":"#frs-lead",
+      "price":"0",
+      "eligibleCustomerType":"NewCustomer",
+      "availabilityEnds": "2025-12-31",
+      "sku":"FRRS-20OFF"
+    }
+  }
+  </script>
+</section>
+<!-- ===== End Freedom Roadside Services – Lead Magnet ===== -->
 
     <section id="services" class="section">
       <h2 style="margin:0 0 14px;font-size:28px">What We Do</h2>
